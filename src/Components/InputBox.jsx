@@ -4,7 +4,7 @@ const inputBox = () => {
     const [label , setLabel] = useState('From')
     const [labelAnother , setLabelAnother] = useState('To')
     const [option , setOption] = useState({})
-    const [to , setTo] = useState("usd")
+    const [to , setTo] = useState("pkr")
     const [from , setFrom] = useState("usd")
     const [amount , setAmount] = useState()
     const [calculatedAmount , setCalculatedAmount] = useState()
@@ -26,7 +26,7 @@ const inputBox = () => {
       }
       
       useEffect(() => {
-        getData('usd').then(data => {
+        getData(from).then(data => {
           setOption(data);
         });
       }, []);
