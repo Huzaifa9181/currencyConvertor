@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-      <div className="container-fluid bg-secondary w-100 d-flex align-items-center justify-content-center" style={{ height: '100vh' }}>
-        <div className="Box-container p-4" style={{ width: '45%' }}>
+      <div className="container-fluid bg-secondary w-100 d-flex align-items-center justify-content-center" style={{ backgroundImage: 'url("public/bg-img-2.jpg")' , backgroundSize: 'cover', height: '100vh' }}>
+        <div className="Box-container p-4" style={{ width: '45%' ,     background: '#bdb3aa' }}>
           <InputBox/>
           
         </div>
